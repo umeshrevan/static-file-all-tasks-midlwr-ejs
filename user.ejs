@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Users</title>
+  </head>
+  <body>
+    <h1>Users</h1>
+    <table border="2">
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (var i = 0; i < user.length; i++) { %>
+          <tr>
+            <td><%= user[i].username %></td>
+            <td><%= user[i].fullname %></td>
+            <td><%= user[i].email %></td>
+            <td><%= user[i].phoneNumber %></td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </body>
+</html>
